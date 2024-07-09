@@ -15,7 +15,7 @@ import { Wallet } from '@coral-xyz/anchor'
 import bs58 from 'bs58'
 
 /**
- * Class representing a Raydium Swap operation.
+ * Class representing a Raydium Swap operation. This class handles all operations related to swapping tokens on Raydium.
  */
 class RaydiumSwap {
   allPoolKeysJson: LiquidityPoolJsonInfo[]
@@ -249,7 +249,7 @@ class RaydiumSwap {
     const currencyIn = new Token(TOKEN_PROGRAM_ID, currencyInMint, currencyInDecimals)
     const amountIn = new TokenAmount(currencyIn, rawAmountIn, false)
     const currencyOut = new Token(TOKEN_PROGRAM_ID, currencyOutMint, currencyOutDecimals)
-    const slippage = new Percent(5, 100) // 5% slippage
+    const slippage = new Percent(8, 100) // 5% slippage
 
     const { amountOut, minAmountOut, currentPrice, executionPrice, priceImpact, fee } = Liquidity.computeAmountOut({
       poolKeys,

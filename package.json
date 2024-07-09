@@ -1,10 +1,11 @@
 {
-  "name": "raydium-swap-example",
+  "name": "buybot",
   "version": "1.0.0",
-  "description": "An example to swap tokens on Solana using the Raydium SDK.",
+  "description": "buybot on Solana using the Raydium SDK.",
   "main": "index.js",
   "scripts": {
-    "swap": "ts-node ./src/index.ts"
+    "swap": "ts-node ./src/index.ts",
+    "parent": "ts-node ./src/parent.ts"
   },
   "author": "DZ",
   "license": "MIT",

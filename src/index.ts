@@ -1,13 +1,11 @@
 import RaydiumSwap from './RaydiumSwap';
 import { Transaction, VersionedTransaction } from '@solana/web3.js';
 import 'dotenv/config';
-import { swapConfig } from './swapConfig'; // Import the configuration
+import { swapConfig } from './swapConfig'; 
 
-/**
- * Performs a token swap on the Raydium protocol.
- * Depending on the configuration, it can execute the swap or simulate it.
- */
+
 const swap = async () => {
+  //async function to handle the swap operation
   /**
    * The RaydiumSwap instance for handling swaps.
    */
